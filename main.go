@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fmt"
 	"os"
+
+	"github.com/liampulles/banger/pkg/app"
 )
 
 func main() {
-	fmt.Println("hot damn, dem some good tunes...")
-	os.Exit(0)
+	os.Exit(app.Run(os.Args))
 }
